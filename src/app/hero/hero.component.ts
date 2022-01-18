@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import { Hero } from '../hero';
 
 @Component({
@@ -7,6 +7,7 @@ import { Hero } from '../hero';
   styleUrls:  ['./hero.component.css']
 })
 export class HeroComponent {
+ 
   @Input() hero: Hero;
   @Output() delete = new EventEmitter();
 
